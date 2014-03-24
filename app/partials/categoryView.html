@@ -1,11 +1,11 @@
 <section>
     <nav id="451qa_nav_hdr" class="nav">
         <ul>
-            <li>
-                <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || 'All Categories'"></span>
-                <span class="text-primary" ng-show="currentCategory.SubCategories.length && currentCategory.InteropID">Categories</span>
-                <span class="text-primary" ng-show="!currentCategory">All Categories</span>
-            </li>
+            <!--<li>-->
+                <!--<span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || 'All Categories'"></span>-->
+                <!--<span class="text-primary" ng-show="currentCategory.SubCategories.length && currentCategory.InteropID">Categories</span>-->
+                <!--<span class="text-primary" ng-show="!currentCategory">All Categories</span>-->
+            <!--</li>-->
             <li class="pull-right">
                 <a href="#/search">
                     <span><i class="fa fa-search"></i></span>
@@ -13,18 +13,18 @@
             </li>
         </ul>
     </nav>
-    <aside class="col-sm-3 col-collapse visible-md visible-lg">
-        <div class="panel">
-            <nav class="nav 451_cat_nav panel-nav">
-                <span>
-                    <a href="#/catalog">All Products</a>
-                </span>
-                <ul class="451_cat_item">
-                    <categorytree tree='tree' current='currentCategory' />
-                </ul>
-            </nav>
-        </div>
-    </aside>
+    <!--<aside class="col-sm-3 col-collapse visible-md visible-lg">-->
+        <!--<div class="panel">-->
+            <!--<nav class="nav 451_cat_nav panel-nav">-->
+                <!--<span>-->
+                    <!--<a href="#/catalog">All Products</a>-->
+                <!--</span>-->
+                <!--<ul class="451_cat_item">-->
+                    <!--<categorytree tree='tree' current='currentCategory' />-->
+                <!--</ul>-->
+            <!--</nav>-->
+        <!--</div>-->
+    <!--</aside>-->
     <div class="col-md-8 col-md-offset-1 col-collapse">
         <div class="category-list" ng-show="currentCategory">
             <loadingindicator ng-show="categoryLoadingIndicator" title="Please wait while we fetch all categories" />
