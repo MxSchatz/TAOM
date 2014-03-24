@@ -1,0 +1,136 @@
+<section class="specform-default">
+    <productnav editvariant="true" product="Product" variant="Variant" />
+
+    <div class="col-md-4" ng-hide="!Variant.PreviewUrl">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <figure>
+                    <img ng-src="{{Variant.PreviewUrl}}" />
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div ng-class="{'col-xs-12': !Variant.PreviewUrl, 'col-md-7 col-md-offset-1': Variant.PreviewUrl }">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span ng-show="Variant.PreviewUrl">Edit </span>{{Variant.ExternalID || 'Create New'}}</h3>
+            </div>
+                <div class="panel-body">
+                    <div class="panel-body form-group">
+                        <br />
+                        <div class="text-info">Step 1: Type In Your Name</div>
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                                <customtextfield customfield="Variant.Specs.Name"></customtextfield>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                                <customselectionfield customfield="Variant.Specs.MotivePosition"></customselectionfield>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                                <customselectionfield customfield="Variant.Specs.MotiveSelection"></customselectionfield>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="text-info">Step 2: Configure Your Motif</div>
+                        <br />
+                            <table border="0" cellpadding="0" cellspacing="0" width="656">
+                                <tbody>
+                                <tr>
+                                    <td ><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/bassjumping.jpg"/>
+                                        <div>click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/boxer.jpg"/>
+                                        <div>click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/breifcase.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/compass.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/deer.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/dog.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/doginpond.jpg"/>
+                                        <div class="clickinstr">click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/duck.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/hatandcane.jpg"/>
+                                        <div class="clickinstr">click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/hunter.jpg"/>
+                                        <div class="clickinstr">click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/moose.jpg"/>
+                                        <div>click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/mustache.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/pipe.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/pistol.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/razor.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/rifle.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/sailboat.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/stringer.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                    <td><img src="http://www.four51.com/Themes/Custom/0522be56-6d86-4457-a09b-6b8f04e094c1//Art%20of%20Manliness/thumbs/trout.jpg"/>
+                                        <div >click to choose</div>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        <br />
+                        <div class="text-info">Step 3: Click The Save Button</div>
+                    </div>
+                </div>
+
+                <!--<div id="451_list_vspec" ng-show="true">-->
+                    <!--&lt;!&ndash;<div class="form-group" ng-repeat="s in Variant.Specs | onproperty:[{Property: 'CanSetForLineItem', Value: false}, {Property: 'DefinesVariant', Value: false}]">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<customfilefield customfield="s" ng-if="s.ControlType == 'File'"></customfilefield>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<customtextfield customfield="s" ng-if="s.ControlType == 'Text'"></customtextfield>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<customselectionfield customfield="s" ng-if="s.ControlType == 'Selection'" class="row"></customselectionfield>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--</div>-->
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-primary pull-right" type="submit" ng-click="save()">Save</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
